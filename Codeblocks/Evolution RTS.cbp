@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Evolution RTS" />
+		<Option pch_mode="2" />
+		<Option compiler="glbasic_gnu_gcc_compiler" />
+		<Option virtualFolders="zInclude\GLBasic Output\;zInclude\Engine\;zInclude\Main\;zInclude\GLB\;zInclude\Engine\Graphics\;zInclude\Engine\Threading\;zInclude\Common\;zInclude\;zInclude\Engine\Net\;zInclude\Engine\World\;zInclude\GLBasic Output\Compiled\;Main\;zInclude\GLBasic Output\;Engine\Threading\Hawkthreads\;Engine\;Engine\Math\;Engine\Graphics\;Engine\Net\;Engine\World\;Engine\GLB\;Engine\Agent\;zInclude\Engine\Agent\;zInclude\Engine\Math\;" />
+		<Build>
+			<Target title="GLBasic">
+				<Option output="bin/Evolution" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj" />
+				<Option type="0" />
+				<Option compiler="glbasic_gnu_gcc_compiler" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add directory="../Include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option='-Wl,-Bdynamic,-enable-stdcall-fixup,--subsystem,windows -B&quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Win32\Lib&quot; -L&quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Win32\Lib&quot; -L&quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Win32\Lib\DX7&quot; ../Include/icon.o  -lGLBasic -lpng -ldsound -ldinput8 -lwinmm -lole32 -lopengl32 -lvfw32 -lws2_32 -lgdi32 -lcomdlg32 -luser32 -lkernel32 -ladvapi32 -lshell32' />
+					<Add directory="C:/Program Files/GLBasic/Compiler/platform/Win32/Lib/DX7" />
+					<Add directory="C:/Program Files/GLBasic/Compiler/platform/Win32/Lib" />
+				</Linker>
+			</Target>
+			<Target title="GLBasic Debug">
+				<Option output="bin/Evolution" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj" />
+				<Option type="0" />
+				<Option compiler="glbasic_gnu_gcc_compiler" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add directory="../Include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add option='-Wl,-Bdynamic,-enable-stdcall-fixup,--subsystem,windows -B&quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Win32\Lib&quot; -L&quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Win32\Lib&quot; -L&quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Win32\Lib\DX7&quot; ../Include/icon.o  -lGLBasic -lpng -ldsound -ldinput8 -lwinmm -lole32 -lopengl32 -lvfw32 -lws2_32 -lgdi32 -lcomdlg32 -luser32 -lkernel32 -ladvapi32 -lshell32' />
+					<Add directory="C:/Program Files/GLBasic/Compiler/platform/Win32/Lib" />
+					<Add directory="C:/Program Files/GLBasic/Compiler/platform/Win32/Lib/DX7" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../Headers/Agent.hpp">
+			<Option virtualFolder="zInclude/Engine/Agent/" />
+		</Unit>
+		<Unit filename="../Headers/Agent_Enemy.hpp">
+			<Option virtualFolder="zInclude/Engine/Agent/" />
+		</Unit>
+		<Unit filename="../Headers/Agent_Player.hpp">
+			<Option virtualFolder="zInclude/Engine/Agent/" />
+		</Unit>
+		<Unit filename="../Headers/Atomic.hpp">
+			<Option virtualFolder="zInclude/Engine/Threading/" />
+		</Unit>
+		<Unit filename="../Headers/Engine.hpp">
+			<Option virtualFolder="zInclude/Engine/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Event.hpp">
+			<Option virtualFolder="zInclude/Engine/" />
+		</Unit>
+		<Unit filename="../Headers/Evolution.hpp">
+			<Option virtualFolder="zInclude/Main/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/GLB_Interface.hpp">
+			<Option virtualFolder="zInclude/GLB/" />
+		</Unit>
+		<Unit filename="../Headers/GLB_Keycodes.hpp">
+			<Option virtualFolder="zInclude/GLB/" />
+		</Unit>
+		<Unit filename="../Headers/Graphics_Camera.hpp">
+			<Option virtualFolder="zInclude/Engine/Graphics/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Graphics_GL.hpp">
+			<Option virtualFolder="zInclude/Engine/Graphics/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Hawkthreads.hpp">
+			<Option virtualFolder="zInclude/Engine/Threading/" />
+		</Unit>
+		<Unit filename="../Headers/Macro.hpp">
+			<Option virtualFolder="zInclude/Common/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Math_Frustum.hpp">
+			<Option virtualFolder="zInclude/Engine/Math/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Math_Functional.hpp">
+			<Option virtualFolder="zInclude/Engine/Math/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Math_PerlinNoise.hpp">
+			<Option virtualFolder="zInclude/Engine/Math/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Math_Plane.hpp">
+			<Option virtualFolder="zInclude/Engine/Math/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Math_Vector.hpp">
+			<Option virtualFolder="zInclude/Engine/Math/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Media.hpp">
+			<Option virtualFolder="zInclude/Main/" />
+		</Unit>
+		<Unit filename="../Headers/Net_Connection.hpp">
+			<Option virtualFolder="zInclude/Engine/Net/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Net_Exception.hpp">
+			<Option virtualFolder="zInclude/Engine/Net/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Net_Message.hpp">
+			<Option virtualFolder="zInclude/Engine/Net/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Net_Socket.hpp">
+			<Option virtualFolder="zInclude/Engine/Net/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Net_UDP.hpp">
+			<Option virtualFolder="zInclude/Engine/Net/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/Random.hpp">
+			<Option virtualFolder="zInclude/Common/" />
+		</Unit>
+		<Unit filename="../Headers/Threading.hpp">
+			<Option virtualFolder="zInclude/Engine/Threading/" />
+		</Unit>
+		<Unit filename="../Headers/World_Map.hpp">
+			<Option virtualFolder="zInclude/Engine/World/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Headers/World_Octree.hpp">
+			<Option virtualFolder="zInclude/Engine/World/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Include/HT/htcondition.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Engine/Threading/Hawkthreads/" />
+		</Unit>
+		<Unit filename="../Include/HT/hthread.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Engine/Threading/Hawkthreads/" />
+		</Unit>
+		<Unit filename="../Include/HT/htmutex.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Engine/Threading/Hawkthreads/" />
+		</Unit>
+		<Unit filename="../Include/icon.o">
+			<Option compile="1" />
+			<Option virtualFolder="zInclude/Common/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../Source/Agent.cpp">
+			<Option virtualFolder="Engine/Agent/" />
+		</Unit>
+		<Unit filename="../Source/Agent_Enemy.cpp">
+			<Option virtualFolder="Engine/Agent/" />
+		</Unit>
+		<Unit filename="../Source/Agent_Player.cpp">
+			<Option virtualFolder="Engine/Agent/" />
+		</Unit>
+		<Unit filename="../Source/Chill.hpp">
+			<Option virtualFolder="zInclude/Main/" />
+		</Unit>
+		<Unit filename="../Source/Engine.cpp">
+			<Option virtualFolder="Engine/" />
+		</Unit>
+		<Unit filename="../Source/Evolution.cpp">
+			<Option virtualFolder="Main/" />
+		</Unit>
+		<Unit filename="../Source/GLB_Interface.cpp">
+			<Option virtualFolder="Engine/GLB/" />
+		</Unit>
+		<Unit filename="../Source/Graphics_Camera.cpp">
+			<Option virtualFolder="Engine/Graphics/" />
+		</Unit>
+		<Unit filename="../Source/Graphics_GL.cpp">
+			<Option virtualFolder="Engine/Graphics/" />
+		</Unit>
+		<Unit filename="../Source/MainRender.hpp">
+			<Option virtualFolder="zInclude/Main/" />
+		</Unit>
+		<Unit filename="../Source/Math_Frustum.cpp">
+			<Option virtualFolder="Engine/Math/" />
+		</Unit>
+		<Unit filename="../Source/Math_PerlinNoise.cpp">
+			<Option virtualFolder="Engine/Math/" />
+		</Unit>
+		<Unit filename="../Source/Math_Plane.cpp">
+			<Option virtualFolder="Engine/Math/" />
+		</Unit>
+		<Unit filename="../Source/Media.cpp">
+			<Option virtualFolder="Main/" />
+		</Unit>
+		<Unit filename="../Source/Net_Connection.cpp">
+			<Option virtualFolder="Engine/Net/" />
+		</Unit>
+		<Unit filename="../Source/Net_Message.cpp">
+			<Option virtualFolder="Engine/Net/" />
+		</Unit>
+		<Unit filename="../Source/Net_Socket.cpp">
+			<Option virtualFolder="Engine/Net/" />
+		</Unit>
+		<Unit filename="../Source/Net_UDP.cpp">
+			<Option virtualFolder="Engine/Net/" />
+		</Unit>
+		<Unit filename="../Source/Progress.hpp">
+			<Option virtualFolder="zInclude/Main/" />
+		</Unit>
+		<Unit filename="../Source/Thrill.hpp">
+			<Option virtualFolder="zInclude/Main/" />
+		</Unit>
+		<Unit filename="../Source/World_Map.cpp">
+			<Option virtualFolder="Engine/World/" />
+		</Unit>
+		<Unit filename="../Source/World_Octree.cpp">
+			<Option virtualFolder="Engine/World/" />
+		</Unit>
+		<Unit filename="../Source/World_Octree_Render.cpp">
+			<Option virtualFolder="Engine/World/" />
+		</Unit>
+		<Unit filename="Evolution0.cpp">
+			<Option virtualFolder="zInclude/GLBasic Output/Compiled/" />
+			<Option compiler="gcc" use="0" buildCommand='mingw32-g++.exe -Wall  -fexpensive-optimizations -O3  -Wall    -I &quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Include&quot; -I &quot;C:\Program Files (x86)\GLBasic\Compiler\platform\Win32\Include&quot; -I &quot;E:\Dropbox\Evolution RTS\Current\Codeblocks\&quot; -I&quot; C:\Program Files (x86)\GLBasic\Compiler\platform\Include&quot;  -c &quot;E:\Dropbox\Evolution RTS\Current\Codeblocks\Evolution0.cpp&quot; -o .objs\Codeblocks\Evolution0.o' />
+		</Unit>
+		<Unit filename="Evolutiong.cpp">
+			<Option virtualFolder="zInclude/GLBasic Output/Compiled/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
